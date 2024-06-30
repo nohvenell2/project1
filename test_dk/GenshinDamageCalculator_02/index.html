@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Damage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Genshin Impact Damage Calculator</h1>
+        <form id="damageForm">
+            <div class="form-group">
+                <label for="baseAttack">Base Attack:</label>
+                <input type="number" id="baseAttack" required>
+            </div>
+
+            <div class="form-group">
+                <label for="attackPercentage">Attack Percentage (%):</label>
+                <input type="number" id="attackPercentage" required>
+            </div>
+
+            <div class="form-group">
+                <label for="flatAttack">Flat Attack:</label>
+                <input type="number" id="flatAttack" required>
+            </div>
+
+            <div class="form-group">
+                <label for="damageBonus">Damage Bonus (%):</label>
+                <input type="number" id="damageBonus" required>
+            </div>
+
+            <div class="form-group">
+                <label for="critRate">Crit Rate (%):</label>
+                <input type="number" id="critRate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="critDamage">Crit Damage (%):</label>
+                <input type="number" id="critDamage" required>
+            </div>
+
+            <div class="form-group">
+                <label for="enemyResistance">Enemy Resistance (%):</label>
+                <input type="number" id="enemyResistance" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reactionMultiplier">Reaction Multiplier:</label>
+                <input type="number" id="reactionMultiplier" required>
+            </div>
+
+            <div class="form-group">
+                <label for="elementalMastery">Elemental Mastery:</label>
+                <input type="number" id="elementalMastery" required>
+            </div>
+
+            <button type="button" onclick="calculateDamage()">Calculate Damage</button>
+        </form>
+
+        <h2>Calculated Damage:</h2>
+        <p id="result">0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
